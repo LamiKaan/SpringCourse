@@ -1,0 +1,9 @@
+# OS and IDE config directories
+.DS_Store
+.idea
+.mvn
+
+# Maven related files
+./mvnnw
+./mnvnw.cmd
+./HELP.md
