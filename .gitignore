@@ -4,6 +4,6 @@
 .mvn
 
 # Maven related files
-./mvnnw
-./mnvnw.cmd
-./HELP.md
+mvnw
+mvnw.cmd
+HELP.md
