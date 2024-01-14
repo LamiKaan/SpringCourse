@@ -9,7 +9,7 @@ public class FirstRestController {
     @Value("${welcome.text}")
     private String welcomeMessage;
 
-    // Expose "/" to return "Helo World"
+    // Expose "/" to return "Hello World"
     @GetMapping(path = {"/"})
     public String printWelcomeMessage() {
         return welcomeMessage;
