@@ -12,9 +12,13 @@ info.app.description = First Spring project
 info.app.version = 0.0.1
 info.author = LKK
 
-# SECURITY
+# SPRING
+# Security
 spring.security.user.name=lkk
 spring.security.user.password=lkk
+# Spring Core
+# To make every class @Lazy
+#spring.main.lazy-initialization=true
 
 # JSON PRETTY PRINT
 spring.jackson.serialization.indent-output = true
@@ -28,6 +32,3 @@ server.servlet.context-path = /home
 # HTTP session timeout
 server.servlet.session.timeout = 30m
 
-# SPRING CORE
-# To make every class @Lazy
-#spring.main.lazy-initialization=true

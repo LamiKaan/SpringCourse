@@ -20,7 +20,7 @@ public class AccountTRY implements Account{
     // Account balance in cents
     private long balance = 12300;
 
-    AccountTRY() {
+    public AccountTRY() {
         System.out.println("In constructor of the " + getClass().getSimpleName().toUpperCase() + " class");
     }
 
@@ -39,7 +39,7 @@ public class AccountTRY implements Account{
 
 
     @Override
-    public String printBalance() {
+    public String getBalanceAsString() {
         NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(new Locale("tr"));
         return currencyFormatter.format(balance/100);
     }

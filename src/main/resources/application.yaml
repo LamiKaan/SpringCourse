@@ -1,0 +1,68 @@
+# MY CUSTOM PROPERTIES
+welcome_text: Hello WorldDdDdDd!
+
+# ACTUATOR
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+#          include: health, info
+#        base-path: /metrics
+    info:
+        env:
+            enabled: true
+
+# INFO (can be viewed by info actuator)
+info:
+    app:
+        description: First Spring project
+        name: SpringCourse
+        version: 0.0.1
+    author: LKK
+
+# SPRING
+spring:
+    jackson:
+        serialization:
+            # JSON pretty print (doesn't work, why?)
+            indent-output: true
+    # Security
+    security:
+        user:
+            name: lkk
+            password: lkk
+    # Core
+    main:
+        # Do not display "Spring" banner in console in every run
+        banner-mode: off
+    #        # To make every class @Lazy
+#        lazy-initialization: true
+    # Data Source
+    datasource:
+        url: jdbc:mysql://127.0.0.1:3307/bank_db
+        username: lkk
+        password: lkk
+
+
+# HTTP
+http:
+    mappers:
+        # JSON pretty print (doesn't work, why?)
+        jsonPrettyPrint: true
+
+
+# WEB SERVER
+server:
+    # Set a different port for the HTTP Server
+    port: 9876
+    servlet:
+        # Change default context-path (=path(?)) for the application
+        context-path: /home
+        session:
+            # HTTP session timeout
+            timeout: 30m
+logging:
+    level:
+        root: warn
+# LOGGING

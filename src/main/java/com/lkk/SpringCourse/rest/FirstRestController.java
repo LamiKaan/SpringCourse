@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class FirstRestController {
-    @Value("${welcome.text}")
+    @Value("${welcome_text}")
     private String welcomeMessage;
 
     // Expose "/" to return "Hello World"

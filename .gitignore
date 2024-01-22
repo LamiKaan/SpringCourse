@@ -11,3 +11,6 @@ HELP.md
 
 # Don't track 'target' directory (created on build)
 target/
+
+# Zip file
+Database/00-starter-sql-scripts.zip

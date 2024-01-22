@@ -13,8 +13,8 @@ public class AccountRestController {
 
     private Account userAccount;
 
-    @Autowired
-    public AccountRestController(Account userAccount) {
+//    @Autowired
+    public AccountRestController(@Qualifier("accountGBP") Account userAccount) {
 //        System.out.println("In constructor of the " + getClass().getSimpleName().toUpperCase() + " class");
         this.userAccount = userAccount;
     }
@@ -25,8 +25,8 @@ public class AccountRestController {
 //    }
 
     @GetMapping("/account")
-    public String getAccountBalance() {
-        String balance = this.userAccount.printBalance();
+    public String displayAccountBalance() {
+        String balance = this.userAccount.getBalanceAsString();
         return String.format("Account balance: %s", balance);
     }
 }

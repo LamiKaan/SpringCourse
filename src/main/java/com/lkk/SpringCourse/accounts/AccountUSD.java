@@ -13,13 +13,13 @@ public class AccountUSD implements Account{
     // Account balance in cents
     private long balance = 45600;
 
-    AccountUSD() {
+    public AccountUSD() {
         System.out.println("In constructor of the " + getClass().getSimpleName().toUpperCase() + " class");
     }
 
 
     @Override
-    public String printBalance() {
+    public String getBalanceAsString() {
         NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.US);
         return currencyFormatter.format(balance/100);
     }
